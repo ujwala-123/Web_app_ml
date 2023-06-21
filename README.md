@@ -10,10 +10,40 @@ The following files are included in this repository:
 4. 'manage.py': This Django management script initiates operations like running the development server and migrating the database.
 
 ## Procedure to build the Web app
-1. Install Django, and Python and set up the environment.
-2. ### Create Django Project
-   Create a project using the following command in the terminal after navigating to the directory. /t
-   django-admin startproject myproject
-4. 
-   
+### Set Up the Development Environment
+   Install Django, and Python and set up the environment.
+### Create Django Project
+1. Create a project using the following command in the terminal after navigating to the directory. 
+django-admin startproject myproject
+2. Navigate to the project directory
+cd myproject
+### Create Django App
+1. In the project directory, create a new Django app using following command:
+python manage.py startapp demoapp
+2. update this app name in 'INSTALLED_APPS' list in settings.py in the project directory.
+### Set Up URL routing:
+1. I defined URL patterns in urls.py in demoapp for creating two pages ('index' and 'predict') and connected them to corresponding views.
+2. The code is available in 'demoapp/urls.py'.
+### Create Views:
+1. Views handle user requests and return responses.
+2. I have created two functions for 'index' and 'predict'.
+3. Each function takes a request and gets the response from the model by giving instances.
+4. The code is available in 'demoapp/views.py'.
+### Define Models:
+1. In models.py, I defined models for all the features of the Iris dataset in class Iris and also defined the 'ipredict_species' functions in the class.
+2. Here, 'predict_species' function has a machine learning model (Logistic Regression) and the predicted value gives to views.
+3. The code is available in 'demoapp/models.py'.
+### Create Templates
+1. Created two HTML templates in the templates directory of demoapp to define the structure and layout of web pages. These templates dynamically display data from the views.
+2. The HTML files available in 'demoapp/templates'
+### Run Migrations
+1. Run migrations to create the necessary database tables:
+python manage.py makemigrations
+python manage.py migrate
+### Run the WebApplication
+Run the development server using the following command.
+python manage.py runserver
+
+
+
 
