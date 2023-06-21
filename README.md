@@ -26,9 +26,11 @@ python manage.py startapp demoapp
 2. The code is available in 'demoapp/urls.py'.
 ### Create Views:
 1. Views handle user requests and return responses.
-2. I have created two functions for 'index' and 'predict'.
+2. I have created two functions for the 'index' and 'predict' pages.
 3. Each function takes a request and gets the response from the model by giving instances.
-4. The code is available in 'demoapp/views.py'.
+4. Here, 'index; page gives dataset of all the given values by the user and the encoded predicted value.
+5. In 'predict' page, the predicted species name will be displayed after giving the physical attributes or features as input by the user.
+6. 6. The code is available in 'demoapp/views.py'.
 ### Define Models:
 1. In models.py, I defined models for all the features of the Iris dataset in class Iris and also defined the 'ipredict_species' functions in the class.
 2. Here, 'predict_species' function has a machine learning model (Logistic Regression) and the predicted value gives to views.
