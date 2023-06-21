@@ -45,7 +45,11 @@ python manage.py migrate
 python manage.py runserver
 
 ## Web App
+The 'Predict' web page:
 ![Screenshot (194)](https://github.com/ujwala-123/Web_app_ml/assets/72090397/4aa63451-e87d-4a30-9a59-c8060b4879cc)
+The 'index' web page:
+![Screenshot (195)](https://github.com/ujwala-123/Web_app_ml/assets/72090397/6c32ba54-87c7-40b7-9cc7-4d6b61e2b9d3)
+
 
 
 
