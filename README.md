@@ -41,8 +41,12 @@ python manage.py startapp demoapp
 python manage.py makemigrations<br>
 python manage.py migrate
 ### Run the WebApplication
-Run the development server using the following command.<br>
+1. Run the development server using the following command.<br>
 python manage.py runserver
+
+## Web App
+![Alt Text]("C:\Users\UJJU\Pictures\Screenshots\Screenshot (194).png")
+![Alt Text]("C:\Users\UJJU\Pictures\Screenshots\Screenshot (195).png")
 
 
 
