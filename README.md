@@ -18,7 +18,7 @@ django-admin startproject myproject
 2. Navigate to the project directory
 cd myproject
 ### Create Django App
-1. In the project directory, create a new Django app using following command:
+1. In the project directory, create a new Django app using following command:<br>
 python manage.py startapp demoapp
 2. update this app name in 'INSTALLED_APPS' list in settings.py in the project directory.
 ### Set Up URL routing:
@@ -37,11 +37,11 @@ python manage.py startapp demoapp
 1. Created two HTML templates in the templates directory of demoapp to define the structure and layout of web pages. These templates dynamically display data from the views.
 2. The HTML files available in 'demoapp/templates'
 ### Run Migrations
-1. Run migrations to create the necessary database tables:
-python manage.py makemigrations
+1. Run migrations to create the necessary database tables: <br>
+python manage.py makemigrations<br>
 python manage.py migrate
 ### Run the WebApplication
-Run the development server using the following command.
+Run the development server using the following command.<br>
 python manage.py runserver
 
 
