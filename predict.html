@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predict</title>
+</head>
+<body>
+    <style>
+        .box {
+            width: 300px;
+            height: 20px;
+        }
+        
+        .box > * {
+            font-size: 98px;
+            line-height: 2.5;
+        }
+    </style>
+    <h1>Make a Prediction</h1>
+    <form method="POST" action="{% url 'predict' %}">
+        {% csrf_token %}
+        <label for="sepal_length">Sepal Length:</label>
+        <input class = "box" type="text" name="sepal_length" id="sepal_length" required><br>
+        
+        <label for="sepal_width">Sepal Width:</label>
+        <input class = "box" type="text" name="sepal_width" id="sepal_width" required><br>
+        
+        <label for="petal_length">Petal Length:</label>
+        <input class = "box" type="text" name="petal_length" id="petal_length" required><br>
+        
+        <label for="petal_width">Petal Width:</label>
+        <input class = "box" type="text" name="petal_width" id="petal_width" required><br>
+        
+        <input type="submit" value="Predict">
+    </form>
+    {% if predicted_species %}
+        <p class = "box > *" >The predicted species is {{ predicted_species }}</p>
+    {% else %}
+        <p class = "box > *" > Not predicted</p>
+    {% endif %}
+
+</body>
+</html>
