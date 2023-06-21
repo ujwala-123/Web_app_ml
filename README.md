@@ -45,8 +45,9 @@ python manage.py migrate
 python manage.py runserver
 
 ## Web App
-![Alt Text]("C:\Users\UJJU\Pictures\Screenshots\Screenshot (194).png")
-![Alt Text]("C:\Users\UJJU\Pictures\Screenshots\Screenshot (195).png")
+![Screenshot (194)](https://github.com/ujwala-123/Web_app_ml/assets/72090397/4aa63451-e87d-4a30-9a59-c8060b4879cc)
+
+
 
 
 
